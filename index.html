@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRF Marketing - Books & Stationery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">📚 SRF <span>Marketing</span></div>
+        <div class="nav-mid">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            <button onclick="renderProducts()">Search</button>
+        </div>
+        <div class="nav-right">
+            <a href="cart.html">🛒 Cart <span id="cartCount">0</span></a>
+            <a href="admin.html">Admin</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Welcome to SRF Marketing</h1>
+        <p>Your complete bookstore & stationery shop.</p>
+        <button onclick="scrollToProducts()" class="btn">Shop Now</button>
+    </header>
+
+    <section class="products-section" id="productsSection">
+        <h2>Featured Products</h2>
+        <p id="productCountInfo"></p>
+        <div id="productsGrid" class="products-grid"></div>
+    </section>
+
+    <footer>
+        <p>© 2025 SRF Marketing. Minor Project - BTIRT Sagar</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
