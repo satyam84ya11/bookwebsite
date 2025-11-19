@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel - SRF Marketing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">📚 SRF <span>Marketing</span></div>
+        <div class="nav-right">
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
+        </div>
+    </nav>
+
+    <section class="admin-section">
+        <h2>Admin Login</h2>
+        <div id="adminLoginBox">
+            <input id="adminUser" placeholder="Username">
+            <input id="adminPass" type="password" placeholder="Password">
+            <button onclick="adminLogin()" class="btn">Login</button>
+            <p id="adminError" class="error"></p>
+        </div>
+
+        <div id="adminPanel" class="hidden">
+            <h2>Product Management</h2>
+
+            <div class="admin-grid">
+                <div>
+                    <h3>Add New Product</h3>
+                    <input id="pTitle" placeholder="Product Name">
+                    <input id="pCategory" placeholder="Category">
+                    <input id="pPrice" placeholder="Price">
+                    <button onclick="addNewProduct()" class="btn">Add Product</button>
+                    <p id="adminMsg"></p>
+                </div>
+
+                <div>
+                    <h3>Existing Products</h3>
+                    <ul id="adminProductList"></ul>
+                    <button onclick="resetProducts()" class="btn-secondary">Reset to Default</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 SRF Marketing</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
