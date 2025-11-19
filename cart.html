@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Cart - SRF Marketing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">📚 SRF <span>Marketing</span></div>
+        <div class="nav-right">
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart <span id="cartCount">0</span></a>
+        </div>
+    </nav>
+
+    <section class="cart-section">
+        <h2>Your Cart</h2>
+        <div id="cartContainer"></div>
+
+        <div id="cartSummary" class="summary hidden">
+            <h3>Order Summary</h3>
+            <p>Items: <span id="summaryItems">0</span></p>
+            <p>Total Amount: ₹<span id="summaryTotal">0</span></p>
+
+            <h3>Customer Details</h3>
+            <input id="custName" placeholder="Full Name">
+            <input id="custPhone" placeholder="Phone Number">
+            <textarea id="custAddress" placeholder="Address"></textarea>
+
+            <button onclick="placeOrder()" class="btn">Place Order</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 SRF Marketing</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
